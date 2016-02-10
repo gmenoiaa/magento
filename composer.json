@@ -1,0 +1,15 @@
+{
+  "minimum-stability":"dev",
+  "require":{
+    "n98/magerun":"*"
+  },
+  "repositories":[
+    {
+      "type":"composer",
+      "url":"http://packages.firegento.com"
+    }
+  ],
+  "extra":{
+    "magento-root-dir":"./"
+  }
+}
