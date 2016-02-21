@@ -4,8 +4,8 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#composer-lock-the-lock-file",
         "This file is @generated automatically"
     ],
-    "hash": "955bc72b7ac263eb69c804b742913431",
-    "content-hash": "6142dd81aac8d8639b9b0cdb26bfc47c",
+    "hash": "08b737b4a4bca4894457a9f5e3f82e39",
+    "content-hash": "24b27e91ebd01523454107ad48c18809",
     "packages": [
         {
             "name": "composer/composer",
@@ -13,12 +13,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/composer/composer.git",
-                "reference": "6eb50623e6e00bac4ed893802836e50b62c83434"
+                "reference": "4c0e163977f8289288df7b37e0fd0469d3e8cbc6"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/composer/composer/zipball/6eb50623e6e00bac4ed893802836e50b62c83434",
-                "reference": "6eb50623e6e00bac4ed893802836e50b62c83434",
+                "url": "https://api.github.com/repos/composer/composer/zipball/4c0e163977f8289288df7b37e0fd0469d3e8cbc6",
+                "reference": "4c0e163977f8289288df7b37e0fd0469d3e8cbc6",
                 "shasum": ""
             },
             "require": {
@@ -80,7 +80,7 @@
                 "dependency",
                 "package"
             ],
-            "time": "2016-02-08 19:03:10"
+            "time": "2016-02-20 19:28:03"
         },
         {
             "name": "composer/semver",
@@ -239,17 +239,216 @@
             "time": "2014-10-24 07:27:01"
         },
         {
+            "name": "eloquent/composer-config-reader",
+            "version": "2.0.0",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/eloquent/composer-config-reader.git",
+                "reference": "b79319806e1bcc101c89a023b3aeee9e5931e463"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/eloquent/composer-config-reader/zipball/b79319806e1bcc101c89a023b3aeee9e5931e463",
+                "reference": "b79319806e1bcc101c89a023b3aeee9e5931e463",
+                "shasum": ""
+            },
+            "require": {
+                "eloquent/enumeration": "~5",
+                "eloquent/liberator": "~1",
+                "icecave/isolator": "~2",
+                "justinrainbow/json-schema": "~1",
+                "php": ">=5.3"
+            },
+            "require-dev": {
+                "icecave/archer": "~1"
+            },
+            "type": "library",
+            "autoload": {
+                "psr-4": {
+                    "Eloquent\\Composer\\Configuration\\": "src"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Erin Millard",
+                    "email": "ezzatron@gmail.com",
+                    "homepage": "http://ezzatron.com/"
+                }
+            ],
+            "description": "A light-weight component for reading Composer configuration files.",
+            "homepage": "https://github.com/eloquent/composer-config-reader",
+            "keywords": [
+                "composer",
+                "configuration",
+                "parser",
+                "reader"
+            ],
+            "time": "2014-01-22 01:05:31"
+        },
+        {
+            "name": "eloquent/enumeration",
+            "version": "5.1.1",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/eloquent/enumeration.git",
+                "reference": "0242859435d9b135939816858348556d3cde9e3c"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/eloquent/enumeration/zipball/0242859435d9b135939816858348556d3cde9e3c",
+                "reference": "0242859435d9b135939816858348556d3cde9e3c",
+                "shasum": ""
+            },
+            "require": {
+                "php": ">=5.3"
+            },
+            "require-dev": {
+                "icecave/archer": "dev-develop",
+                "phpunit/phpunit": "^4",
+                "sami/sami": "^3"
+            },
+            "type": "library",
+            "autoload": {
+                "psr-4": {
+                    "Eloquent\\Enumeration\\": "src"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Erin Millard",
+                    "email": "ezzatron@gmail.com",
+                    "homepage": "http://ezzatron.com/"
+                }
+            ],
+            "description": "An enumeration implementation for PHP.",
+            "homepage": "https://github.com/eloquent/enumeration",
+            "keywords": [
+                "class",
+                "enum",
+                "enumeration",
+                "multiton",
+                "set",
+                "type"
+            ],
+            "time": "2015-11-03 22:21:38"
+        },
+        {
+            "name": "eloquent/liberator",
+            "version": "1.1.1",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/eloquent/liberator.git",
+                "reference": "a85435066850ab47acc61296c5d20732ff4c9655"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/eloquent/liberator/zipball/a85435066850ab47acc61296c5d20732ff4c9655",
+                "reference": "a85435066850ab47acc61296c5d20732ff4c9655",
+                "shasum": ""
+            },
+            "require": {
+                "eloquent/pops": "~3",
+                "php": ">=5.3.0"
+            },
+            "require-dev": {
+                "icecave/archer": "~0.2"
+            },
+            "type": "library",
+            "autoload": {
+                "psr-0": {
+                    "Eloquent\\Liberator": "src"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Erin Millard",
+                    "email": "ezzatron@gmail.com",
+                    "homepage": "http://ezzatron.com/"
+                }
+            ],
+            "description": "A proxy for circumventing PHP access modifier restrictions.",
+            "homepage": "https://github.com/eloquent/liberator",
+            "keywords": [
+                "access",
+                "modifier",
+                "object",
+                "private",
+                "protected",
+                "proxy",
+                "reflection"
+            ],
+            "time": "2013-03-03 23:02:47"
+        },
+        {
+            "name": "eloquent/pops",
+            "version": "3.1.1",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/eloquent/pops.git",
+                "reference": "b14090a3478f544d1b3a3b9389cb03415cf4f37f"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/eloquent/pops/zipball/b14090a3478f544d1b3a3b9389cb03415cf4f37f",
+                "reference": "b14090a3478f544d1b3a3b9389cb03415cf4f37f",
+                "shasum": ""
+            },
+            "require": {
+                "php": ">=5.3.0"
+            },
+            "require-dev": {
+                "icecave/archer": "~0.2"
+            },
+            "type": "library",
+            "autoload": {
+                "psr-0": {
+                    "Eloquent\\Pops": "src"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Erin Millard",
+                    "email": "ezzatron@gmail.com",
+                    "homepage": "http://ezzatron.com/"
+                }
+            ],
+            "description": "PHP object proxy system.",
+            "homepage": "https://github.com/eloquent/pops",
+            "keywords": [
+                "escaping",
+                "object",
+                "proxy"
+            ],
+            "time": "2013-03-04 10:10:43"
+        },
+        {
             "name": "fzaninotto/faker",
             "version": "dev-master",
             "source": {
                 "type": "git",
                 "url": "https://github.com/fzaninotto/Faker.git",
-                "reference": "ff1d463edb2c74e39f4ec76f7eb99fd47b237507"
+                "reference": "d8c0bebc230284edc91b5e7091013e7a0c55bf34"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/fzaninotto/Faker/zipball/ff1d463edb2c74e39f4ec76f7eb99fd47b237507",
-                "reference": "ff1d463edb2c74e39f4ec76f7eb99fd47b237507",
+                "url": "https://api.github.com/repos/fzaninotto/Faker/zipball/d8c0bebc230284edc91b5e7091013e7a0c55bf34",
+                "reference": "d8c0bebc230284edc91b5e7091013e7a0c55bf34",
                 "shasum": ""
             },
             "require": {
@@ -286,7 +485,59 @@
                 "faker",
                 "fixtures"
             ],
-            "time": "2016-02-09 21:50:17"
+            "time": "2016-02-20 14:15:56"
+        },
+        {
+            "name": "icecave/isolator",
+            "version": "2.3.0",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/IcecaveStudios/isolator.git",
+                "reference": "97c51fafa39c57a8f1a31f978a48fbe6cea4a5d5"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/IcecaveStudios/isolator/zipball/97c51fafa39c57a8f1a31f978a48fbe6cea4a5d5",
+                "reference": "97c51fafa39c57a8f1a31f978a48fbe6cea4a5d5",
+                "shasum": ""
+            },
+            "require": {
+                "php": ">=5.3"
+            },
+            "require-dev": {
+                "icecave/archer": "~1"
+            },
+            "suggest": {
+                "eloquent/asplode": "Drop-in exception-based error handling."
+            },
+            "type": "library",
+            "autoload": {
+                "psr-4": {
+                    "Icecave\\Isolator\\": "src"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "James Harris",
+                    "email": "james.harris@icecave.com.au",
+                    "homepage": "https://github.com/jmalloc"
+                }
+            ],
+            "description": "Dependency injection for global functions.",
+            "homepage": "https://github.com/IcecaveStudios/isolator",
+            "keywords": [
+                "fake",
+                "mock",
+                "phake",
+                "phpunit",
+                "test",
+                "unit"
+            ],
+            "time": "2014-08-12 03:16:11"
         },
         {
             "name": "jakub-onderka/php-console-color",
@@ -381,12 +632,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/justinrainbow/json-schema.git",
-                "reference": "5bf22867216399df15b0a9ab40746efa72f6d343"
+                "reference": "37810e922eed92b0d6a6abc745761c6a0b0a9cd7"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/justinrainbow/json-schema/zipball/5bf22867216399df15b0a9ab40746efa72f6d343",
-                "reference": "5bf22867216399df15b0a9ab40746efa72f6d343",
+                "url": "https://api.github.com/repos/justinrainbow/json-schema/zipball/37810e922eed92b0d6a6abc745761c6a0b0a9cd7",
+                "reference": "37810e922eed92b0d6a6abc745761c6a0b0a9cd7",
                 "shasum": ""
             },
             "require": {
@@ -395,7 +646,7 @@
             "require-dev": {
                 "json-schema/json-schema-test-suite": "1.1.0",
                 "phpdocumentor/phpdocumentor": "~2",
-                "phpunit/phpunit": "~3.7"
+                "phpunit/phpunit": "^4.8.22"
             },
             "bin": [
                 "bin/validate-json"
@@ -439,7 +690,105 @@
                 "json",
                 "schema"
             ],
-            "time": "2016-02-08 14:31:57"
+            "time": "2016-02-17 15:37:01"
+        },
+        {
+            "name": "magento-hackathon/magento-composer-installer",
+            "version": "dev-master",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/Cotya/magento-composer-installer.git",
+                "reference": "c89683ac8e8a925abb8658bbf164f95b3ec4ad56"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/Cotya/magento-composer-installer/zipball/c89683ac8e8a925abb8658bbf164f95b3ec4ad56",
+                "reference": "c89683ac8e8a925abb8658bbf164f95b3ec4ad56",
+                "shasum": ""
+            },
+            "archive": {
+                "exclude": [
+                    "vendor",
+                    "/tests/FullStackTest/"
+                ]
+            },
+            "require": {
+                "composer-plugin-api": "1.0.0",
+                "eloquent/composer-config-reader": "2.*",
+                "php": ">=5.3.2"
+            },
+            "require-dev": {
+                "composer/composer": "*@dev",
+                "firegento/phpcs": "1.1.0",
+                "mikey179/vfsstream": "*",
+                "phpunit/phpunit": "*",
+                "phpunit/phpunit-mock-objects": "dev-master",
+                "squizlabs/php_codesniffer": "1.4.7",
+                "symfony/process": "*"
+            },
+            "suggest": {
+                "colinmollenhour/modman": "*",
+                "magento-hackathon/composer-command-integrator": "*",
+                "theseer/autoload": "~1.14",
+                "zetacomponents/console-tools": "dev-master"
+            },
+            "type": "composer-plugin",
+            "extra": {
+                "composer-command-registry": [
+                    "MagentoHackathon\\Composer\\Magento\\Command\\DeployCommand"
+                ],
+                "class": "MagentoHackathon\\Composer\\Magento\\Plugin"
+            },
+            "autoload": {
+                "psr-0": {
+                    "MagentoHackathon\\Composer\\Magento": "src/"
+                }
+            },
+            "autoload-dev": {
+                "psr-0": {
+                    "MagentoHackathon\\Composer\\Magento": "tests/"
+                }
+            },
+            "license": [
+                "OSL-3.0"
+            ],
+            "authors": [
+                {
+                    "name": "Daniel Fahlke aka Flyingmana",
+                    "email": "flyingmana@googlemail.com"
+                },
+                {
+                    "name": "Jörg Weller",
+                    "email": "weller@flagbit.de"
+                },
+                {
+                    "name": "Karl Spies",
+                    "email": "karl.spies@gmx.net"
+                },
+                {
+                    "name": "Tobias Vogt",
+                    "email": "tobi@webguys.de"
+                },
+                {
+                    "name": "David Fuhr",
+                    "email": "fuhr@flagbit.de"
+                },
+                {
+                    "name": "Vinai Kopp",
+                    "email": "vinai@netzarbeiter.com"
+                }
+            ],
+            "description": "Composer installer for Magento modules",
+            "homepage": "https://github.com/Cotya/magento-composer-installer",
+            "keywords": [
+                "composer-installer",
+                "magento"
+            ],
+            "support": {
+                "source": "https://github.com/Cotya/magento-composer-installer/tree/2.1",
+                "issues": "https://github.com/Cotya/magento-composer-installer/issues"
+            },
+            "time": "2015-03-25 12:24:13"
         },
         {
             "name": "n98/junit-xml",
@@ -549,12 +898,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/nikic/PHP-Parser.git",
-                "reference": "d6361136e121c8b2bd64dd3437db127b7ae0c353"
+                "reference": "c8282e6e769b7de71a290c469fdfd1ff6a9a05a1"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/nikic/PHP-Parser/zipball/d6361136e121c8b2bd64dd3437db127b7ae0c353",
-                "reference": "d6361136e121c8b2bd64dd3437db127b7ae0c353",
+                "url": "https://api.github.com/repos/nikic/PHP-Parser/zipball/c8282e6e769b7de71a290c469fdfd1ff6a9a05a1",
+                "reference": "c8282e6e769b7de71a290c469fdfd1ff6a9a05a1",
                 "shasum": ""
             },
             "require": {
@@ -592,7 +941,7 @@
                 "parser",
                 "php"
             ],
-            "time": "2016-02-09 12:30:39"
+            "time": "2016-02-20 20:53:08"
         },
         {
             "name": "psy/psysh",
@@ -600,12 +949,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/bobthecow/psysh.git",
-                "reference": "544123ec215261b523f9dbb4bea39ce2c18e5250"
+                "reference": "6c7947c222b66d12b2de1182f2b4545eec8281a4"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/bobthecow/psysh/zipball/544123ec215261b523f9dbb4bea39ce2c18e5250",
-                "reference": "544123ec215261b523f9dbb4bea39ce2c18e5250",
+                "url": "https://api.github.com/repos/bobthecow/psysh/zipball/6c7947c222b66d12b2de1182f2b4545eec8281a4",
+                "reference": "6c7947c222b66d12b2de1182f2b4545eec8281a4",
                 "shasum": ""
             },
             "require": {
@@ -634,7 +983,7 @@
             "type": "library",
             "extra": {
                 "branch-alias": {
-                    "dev-develop": "0.7.x-dev"
+                    "dev-develop": "0.8.x-dev"
                 }
             },
             "autoload": {
@@ -664,7 +1013,7 @@
                 "interactive",
                 "shell"
             ],
-            "time": "2016-01-25 08:24:11"
+            "time": "2016-02-20 16:29:06"
         },
         {
             "name": "seld/cli-prompt",
@@ -810,12 +1159,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/symfony/console.git",
-                "reference": "d59b01b03451dfc1497b9736120ac6bcb422ff10"
+                "reference": "02930f823b232f4a6d7371464240896cca28560a"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/symfony/console/zipball/d59b01b03451dfc1497b9736120ac6bcb422ff10",
-                "reference": "d59b01b03451dfc1497b9736120ac6bcb422ff10",
+                "url": "https://api.github.com/repos/symfony/console/zipball/02930f823b232f4a6d7371464240896cca28560a",
+                "reference": "02930f823b232f4a6d7371464240896cca28560a",
                 "shasum": ""
             },
             "require": {
@@ -862,7 +1211,7 @@
             ],
             "description": "Symfony Console Component",
             "homepage": "https://symfony.com",
-            "time": "2016-02-03 18:01:35"
+            "time": "2016-02-17 06:14:28"
         },
         {
             "name": "symfony/event-dispatcher",
@@ -1200,12 +1549,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/symfony/validator.git",
-                "reference": "e1b6d8fa037190726c328628d80f1412b9d6427c"
+                "reference": "dac90351b48d88d5d9d2a85b825c3d3d0afa6ee9"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/symfony/validator/zipball/e1b6d8fa037190726c328628d80f1412b9d6427c",
-                "reference": "e1b6d8fa037190726c328628d80f1412b9d6427c",
+                "url": "https://api.github.com/repos/symfony/validator/zipball/dac90351b48d88d5d9d2a85b825c3d3d0afa6ee9",
+                "reference": "dac90351b48d88d5d9d2a85b825c3d3d0afa6ee9",
                 "shasum": ""
             },
             "require": {
@@ -1264,7 +1613,7 @@
             ],
             "description": "Symfony Validator Component",
             "homepage": "https://symfony.com",
-            "time": "2016-01-25 09:56:46"
+            "time": "2016-02-14 13:08:45"
         },
         {
             "name": "symfony/var-dumper",
@@ -1272,12 +1621,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/symfony/var-dumper.git",
-                "reference": "c6c8f6195ee77f4e89cafa94f2dc738314349b88"
+                "reference": "3c2f3b6d45a3098450bd1a10376d1d50918006b5"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/symfony/var-dumper/zipball/c6c8f6195ee77f4e89cafa94f2dc738314349b88",
-                "reference": "c6c8f6195ee77f4e89cafa94f2dc738314349b88",
+                "url": "https://api.github.com/repos/symfony/var-dumper/zipball/3c2f3b6d45a3098450bd1a10376d1d50918006b5",
+                "reference": "3c2f3b6d45a3098450bd1a10376d1d50918006b5",
                 "shasum": ""
             },
             "require": {
@@ -1327,7 +1676,7 @@
                 "debug",
                 "dump"
             ],
-            "time": "2016-01-14 09:13:44"
+            "time": "2016-02-13 09:24:02"
         },
         {
             "name": "symfony/yaml",
@@ -1335,12 +1684,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/symfony/yaml.git",
-                "reference": "33fd1b2cfdde601704665fad343014bba04b0753"
+                "reference": "a254665f949aafe04239c80b147cb3de75b5c5c2"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/symfony/yaml/zipball/33fd1b2cfdde601704665fad343014bba04b0753",
-                "reference": "33fd1b2cfdde601704665fad343014bba04b0753",
+                "url": "https://api.github.com/repos/symfony/yaml/zipball/a254665f949aafe04239c80b147cb3de75b5c5c2",
+                "reference": "a254665f949aafe04239c80b147cb3de75b5c5c2",
                 "shasum": ""
             },
             "require": {
@@ -1376,7 +1725,7 @@
             ],
             "description": "Symfony Yaml Component",
             "homepage": "https://symfony.com",
-            "time": "2016-02-02 09:49:18"
+            "time": "2016-02-18 08:58:48"
         },
         {
             "name": "twig/twig",
@@ -1438,6 +1787,76 @@
                 "templating"
             ],
             "time": "2016-01-29 10:45:45"
+        },
+        {
+            "name": "ultimate/modulecreator",
+            "version": "dev-master",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/tzyganu/UMC1.9.git",
+                "reference": "decfe14dafbc4743f85f5ed522bf8096b5ebdd9e"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/tzyganu/UMC1.9/zipball/decfe14dafbc4743f85f5ed522bf8096b5ebdd9e",
+                "reference": "decfe14dafbc4743f85f5ed522bf8096b5ebdd9e",
+                "shasum": ""
+            },
+            "require": {
+                "magento-hackathon/magento-composer-installer": "*"
+            },
+            "type": "magento-module",
+            "extra": {
+                "map": [
+                    [
+                        "app/etc/modules/Ultimate_ModuleCreator.xml",
+                        "app/etc/modules/Ultimate_ModuleCreator.xml"
+                    ],
+                    [
+                        "app/code/community/Ultimate/ModuleCreator",
+                        "app/code/community/Ultimate/ModuleCreator"
+                    ],
+                    [
+                        "app/locale/en_US/Ultimate_ModuleCreator.csv",
+                        "app/locale/en_US/Ultimate_ModuleCreator.csv"
+                    ],
+                    [
+                        "app/design/adminhtml/default/default/layout/ultimate_modulecreator.xml",
+                        "app/design/adminhtml/default/default/layout/ultimate_modulecreator.xml"
+                    ],
+                    [
+                        "app/design/adminhtml/default/default/template/ultimate_modulecreator",
+                        "app/design/adminhtml/default/default/template/ultimate_modulecreator"
+                    ],
+                    [
+                        "skin/adminhtml/default/default/ultimate_modulecreator.css",
+                        "skin/adminhtml/default/default/ultimate_modulecreator.css"
+                    ],
+                    [
+                        "skin/adminhtml/default/default/images/ultimate_modulecreator",
+                        "skin/adminhtml/default/default/images/ultimate_modulecreator"
+                    ],
+                    [
+                        "js/ultimate_modulecreator.js",
+                        "js/ultimate_modulecreator.js"
+                    ]
+                ]
+            },
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Marius Strajeru",
+                    "email": "ultimate.module.creator@gmail.com"
+                }
+            ],
+            "description": "New Ultimate Module Creator for Magento 1.7 +",
+            "support": {
+                "source": "https://github.com/tzyganu/UMC1.9/tree/master",
+                "issues": "https://github.com/tzyganu/UMC1.9/issues"
+            },
+            "time": "2016-01-11 15:30:41"
         }
     ],
     "packages-dev": [],

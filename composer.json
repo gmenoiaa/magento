@@ -1,12 +1,25 @@
 {
   "minimum-stability":"dev",
   "require":{
-    "n98/magerun":"*"
+    "n98/magerun":"*",
+    "ultimate/modulecreator":"*"
   },
   "repositories":[
     {
       "type":"composer",
       "url":"http://packages.firegento.com"
+    },
+    {
+      "type": "vcs",
+      "url": "https://github.com/gmenoiaa/magento-nfe-bling-organisys"
+    },
+    {
+      "type": "vcs",
+      "url": "https://github.com/tzyganu/UMC1.9"
+    },
+    {
+      "type": "path",
+      "url": "/home/geiser/workspace/other/extensions/partyharder_custom"
     }
   ],
   "extra":{

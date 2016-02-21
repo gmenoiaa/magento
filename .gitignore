@@ -3,3 +3,6 @@ var
 app/etc/local.xml
 vendor
 .htaccess
+.buildpath
+.project
+.settings
