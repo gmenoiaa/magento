@@ -1,8 +1,6 @@
 {
   "minimum-stability":"dev",
   "require":{
-    "n98/magerun":"*",
-    "ultimate/modulecreator":"*"
   },
   "repositories":[
     {
@@ -11,18 +9,19 @@
     },
     {
       "type": "vcs",
-      "url": "https://github.com/gmenoiaa/magento-nfe-bling-organisys"
+      "url": "https://github.com/tzyganu/UMC1.9.git"
     },
     {
       "type": "vcs",
-      "url": "https://github.com/tzyganu/UMC1.9"
+      "url": "https://github.com/gmenoiaa/bambuzo_productremover.git"
     },
     {
-      "type": "path",
-      "url": "/home/geiser/workspace/other/extensions/partyharder_custom"
+      "type": "vcs",
+      "url": "https://github.com/gmenoiaa/magento-easy-nfe-module.git"
     }
   ],
   "extra":{
-    "magento-root-dir":"./"
+    "magento-root-dir":"./",
+    "magento-deploystrategy":"copy"
   }
 }
