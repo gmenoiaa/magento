@@ -1,0 +1,41 @@
+<?xml version="1.0"?>
+<config>
+	<modules>
+		<Flopstore_Custom>
+			<version>0.1.0</version>
+		</Flopstore_Custom>
+	</modules>
+	<global>
+		<helpers>
+			<custom>
+				<class>Flopstore_Custom_Helper</class>
+			</custom>
+		</helpers>
+		<models>
+			<custom>
+				<class>Flopstore_Custom_Model</class>
+			</custom>
+		</models>
+		<blocks>
+			<adminhtml>
+				<rewrite>
+					<sales_order_view>Flopstore_Custom_Block_Sales_Order_View
+					</sales_order_view>
+					<sales_order_grid>Flopstore_Custom_Block_Sales_Order_Grid
+					</sales_order_grid>
+				</rewrite>
+			</adminhtml>
+		</blocks>
+	</global>
+	<admin>
+		<routers>
+			<adminhtml>
+				<args>
+					<modules>
+						<flopstore before="Mage_Adminhtml">Flopstore_Custom_Adminhtml</flopstore>
+					</modules>
+				</args>
+			</adminhtml>
+		</routers>
+	</admin>
+</config> 

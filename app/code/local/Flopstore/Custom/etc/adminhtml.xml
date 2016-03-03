@@ -1,0 +1,42 @@
+<?xml version="1.0"?>
+<config>
+	<menu>
+		<catalog>
+			<children>
+				<flopstore_custom translate="title">
+					<title>Flopstore Custom</title>
+					<children>
+						<create translate="title">
+							<title>Create</title>
+							<action>adminhtml/sales_order_shipment/createLabelCustom</action>
+						</create>
+						<print translate="title">
+							<title>Print</title>
+							<action>adminhtml/sales_order_shipment/printLabelCustom</action>
+						</print>
+					</children>
+				</flopstore_custom>
+			</children>
+		</catalog>
+	</menu>
+	<acl>
+		<resources>
+			<admin>
+				<children>
+					<system>
+						<children>
+							<config>
+								<children>
+									<custom translate="title" module="custom">
+										<title>Custom Section</title>
+										<sort_order>0</sort_order>
+									</custom>
+								</children>
+							</config>
+						</children>
+					</system>
+				</children>
+			</admin>
+		</resources>
+	</acl>
+</config>
