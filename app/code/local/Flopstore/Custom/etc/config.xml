@@ -19,10 +19,8 @@
 		<blocks>
 			<adminhtml>
 				<rewrite>
-					<sales_order_view>Flopstore_Custom_Block_Sales_Order_View
-					</sales_order_view>
-					<sales_order_grid>Flopstore_Custom_Block_Sales_Order_Grid
-					</sales_order_grid>
+					<sales_order_view>Flopstore_Custom_Block_Sales_Order_View</sales_order_view>
+					<sales_order_grid>Flopstore_Custom_Block_Sales_Order_Grid</sales_order_grid>
 				</rewrite>
 			</adminhtml>
 		</blocks>

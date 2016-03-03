@@ -334,8 +334,19 @@ class Flopstore_Custom_Adminhtml_Flopstore_CustomController extends Mage_Adminht
 		$invoice->register ();
 		$invoice->getOrder ()->setIsInProcess ( true );
 		
-		if ($method = Mage::getStoreConfig ( "custom/shipping/method" )) {
+		$method = Mage::getStoreConfig ( "custom/shipping/method" );
+		if ($method && $invoice->getOrder ()->getShippingMethod () != $method) {
+			$oldMethod = $invoice->getOrder ()->getShippingMethod ();
+			$allMethods = Mage::getSingleton ( 'custom/system_config_source_shippingmethods' )->toArray ();
+			if (! $description = $allMethods [$method]) {
+				$description = $method;
+			}
+			if (! $oldDescription = $allMethods [$oldMethod]) {
+				$oldDescription = $oldMethod;
+			}
 			$invoice->getOrder ()->setShippingMethod ( $method );
+			$invoice->getOrder ()->setShippingDescription ( $description );
+			$invoice->getOrder ()->addStatusHistoryComment ( "Order shipping method changed from '$oldDescription' to '$description'" );
 		}
 		
 		$transactionSave = Mage::getModel ( 'core/resource_transaction' );
